@@ -165,5 +165,8 @@ body {
     font-size: 24px;
   }
 }
+.hero {
+  background-image: url("https://via.placeholder.com/800x400");
+}
 
   
