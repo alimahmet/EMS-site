@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">EMS</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-page="home" data-i18n="nav.home">Главная</a>
+                <a href="services.html" class="nav-link" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
+                <a href="training.html" class="nav-link" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
+                <a href="about.html" class="nav-link active" data-page="about" data-i18n="nav.about">О нас</a>
+            </div>
+            <div class="header-number">
+                <a href="tel:+77755524414" class="phone">+ 7 (775) 552-44-14</a>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <span id="currentLang">RU</span> ▼
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option" data-lang="ru">Рус 🇷🇺</div>
+                    <div class="lang-option" data-lang="en">Eng 🇬🇧</div>
+                    <div class="lang-option" data-lang="kk">Қаз 🇰🇿</div>
+                </div>
+            </div>
+            <div class="contact-button">
+                <button class="btn-primary" id="contactBtn" data-i18n="nav.contact">Связаться</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1 data-i18n="about.hero.title">О нас</h1>
+            <p class="hero-subtitle" data-i18n="about.hero.subtitle">Профессиональный ремонт и обслуживание электродвигателей с 2019 года</p>
+        </div>
+    </section>
+
+    <section class="about-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label" data-i18n="about.stats.years">лет опыта</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label" data-i18n="about.stats.motors">двигателей в год</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label" data-i18n="about.stats.warranty">месяц гарантии</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-why">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.why.title">Почему выбирают нас</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">🔧</div>
+                    <h3 data-i18n="about.why.card1.title">Профессионализм</h3>
+                    <p data-i18n="about.why.card1.desc">Квалифицированные специалисты с многолетним опытом работы и регулярным повышением квалификации</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚙️</div>
+                    <h3 data-i18n="about.why.card2.title">Современное оборудование</h3>
+                    <p data-i18n="about.why.card2.desc">Используем новейшие диагностические приборы и ремонтное оборудование ведущих производителей</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">✓</div>
+                    <h3 data-i18n="about.why.card3.title">Гарантия качества</h3>
+                    <p data-i18n="about.why.card3.desc">Предоставляем официальную гарантию на все виды работ с полным пакетом документов</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⏱️</div>
+                    <h3 data-i18n="about.why.card4.title">Соблюдение сроков</h3>
+                    <p data-i18n="about.why.card4.desc">Чётко планируем работы и выполняем заказы в согласованные сроки без задержек</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-process">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.process.title">Как мы работаем</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 data-i18n="about.process.step1.title">Приём заявки</h3>
+                        <p data-i18n="about.process.step1.desc">Вы связываетесь с нами по телефону или через форму на сайте, описываете проблему</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 data-i18n="about.process.step2.title">Диагностика</h3>
+                        <p data-i18n="about.process.step2.desc">Проводим комплексную диагностику двигателя на профессиональном оборудовании</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 data-i18n="about.process.step3.title">Согласование</h3>
+                        <p data-i18n="about.process.step3.desc">Составляем смету работ, согласовываем объём и сроки, заключаем договор</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 data-i18n="about.process.step4.title">Ремонт</h3>
+                        <p data-i18n="about.process.step4.desc">Выполняем ремонтные работы с использованием качественных материалов и запчастей</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3 data-i18n="about.process.step5.title">Сдача объекта</h3>
+                        <p data-i18n="about.process.step5.desc">Проводим финальные испытания, оформляем документы и передаём двигатель заказчику</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.faq.title">Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q1.question">Сколько времени занимает диагностика?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q1.answer">Предварительная диагностика занимает от 1 до 3 часов в зависимости от типа и мощности двигателя. Результаты и рекомендации предоставляются сразу после завершения.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q2.question">Предоставляете ли вы гарантию на работы?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q2.answer">Да, мы предоставляем официальную гарантию на все виды работ сроком до 1 месяця. Гарантия оформляется документально в договоре.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q3.question">Какие типы двигателей вы ремонтируете?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q3.answer">Мы работаем с асинхронными, синхронными двигателями, двигателями постоянного тока и другими типами электродвигателей разных производителей.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q4.question">Нужны ли фото или видео для предварительной оценки?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q4.answer">Фото шильдика (табличка с данными) и общего вида двигателя помогут нам дать более точную предварительную оценку стоимости и сроков ремонта.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q5.question">Как узнать стоимость ремонта?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q5.answer">Точную стоимость мы сможем назвать только после диагностики. Предварительную оценку можем дать по телефону или по фото/данным двигателя.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="about.faq.q6.question">Как быстро можно выполнить ремонт?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="about.faq.q6.answer">Срок зависит от сложности работ: текущий ремонт — 3–5 дней, капитальный — 7–14 дней, перемотка — 10–21 день. Срочный ремонт — по согласованию.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-cta">
+        <div class="container">
+            <h2 data-i18n="about.cta.title">Готовы начать работу?</h2>
+            <p data-i18n="about.cta.subtitle">Свяжитесь с нами для консультации и расчёта стоимости</p>
+            <a class="btn-cta" id="contactBtn2" href="index.html#contactForm" data-i18n="about.cta.button">
+                Связаться с нами
+              </a>              
+        </div>
+    </section>
+
+    <!-- Модалка контактов (как на services / training) -->
+    <div class="contact-modal" id="contactModal" aria-hidden="true">
+        <div class="contact-modal__overlay" id="contactModalOverlay"></div>
+
+        <div class="contact-modal__box" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+            <button class="contact-modal__close" id="contactModalClose" aria-label="Close">×</button>
+
+            <h3 class="contact-modal__title" id="contactModalTitle" data-i18n="modal.title">Связаться с EMS</h3>
+            <p class="contact-modal__subtitle" data-i18n="modal.subtitle">Выберите удобный способ</p>
+
+            <div class="contact-modal__actions">
+                <a class="contact-modal__btn" href="tel:+77755524414" data-i18n="modal.call">
+                    📞 Позвонить: +7 (775) 552-44-14
+                </a>
+
+                <a class="contact-modal__btn" target="_blank" rel="noopener"
+                   href="https://wa.me/77755524414?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8E."
+                   data-i18n="modal.whatsapp">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ modal (same UI as contact modal) -->
+    <div class="contact-modal" id="faqModal" aria-hidden="true">
+        <div class="contact-modal__overlay" id="faqModalOverlay"></div>
+  
+        <div class="contact-modal__box" role="dialog" aria-modal="true" aria-labelledby="faqModalTitle">
+      <button class="contact-modal__close" id="faqModalClose" aria-label="Close">×</button>
+  
+      <h3 class="contact-modal__title" id="faqModalTitle">Вопрос</h3>
+      <p class="contact-modal__subtitle" id="faqModalBody">Ответ</p>
+    </div>
+  </div>
+  
+
+    <script src="languages.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

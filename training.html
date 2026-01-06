@@ -1,0 +1,149 @@
+<!-- ========== training.html ========== -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение и материалы - EMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="training.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">EMS</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-page="home" data-i18n="nav.home">Главная</a>
+                <a href="services.html" class="nav-link" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
+                <a href="training.html" class="nav-link active" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
+                <a href="about.html" class="nav-link" data-page="about" data-i18n="nav.about">О нас</a>
+            </div>
+            <div class="header-number">
+                <a href="tel:+77755524414" class="phone">+ 7 (775) 552-44-14</a>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <span id="currentLang">RU</span> ▼
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option" data-lang="ru">Рус 🇷🇺</div>
+                    <div class="lang-option" data-lang="en">Eng 🇬🇧</div>
+                    <div class="lang-option" data-lang="kk">Қаз 🇰🇿</div>
+                </div>
+            </div>
+            <div class="contact-button">
+                <button class="btn-primary" id="contactBtn" data-i18n="nav.contact">Связаться</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="training-hero">
+        <div class="container">
+            <h1 data-i18n="training.hero.title">Обучение и материалы</h1>
+            <p class="hero-subtitle" data-i18n="training.hero.subtitle">Профессиональные обучающие материалы и видеоинструкции по ремонту электродвигателей</p>
+            <button class="btn-hero" id="requestBtn" data-i18n="training.hero.button">Задайте свой вопрос</button>
+        </div>
+    </section>
+    
+    <section class="training-videos">
+        <div class="container">
+          <h2 class="section-title" data-i18n="training.videos.title">Обучающие видео</h2>
+      
+          <div class="videos-grid">
+            <div class="video-card">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/FCvS1nF1wow?playsinline=1"
+                  title="YouTube video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <h3 data-i18n="training.videos.v1.title">Диагностика электродвигателей</h3>
+            </div>
+      
+            <div class="video-card">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/0aMCVoRVjhY?playsinline=1"
+                  title="YouTube video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <h3 data-i18n="training.videos.v2.title">Перемотка обмоток статора</h3>
+            </div>
+      
+            <div class="video-card">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/XAKnjCvp0F4?playsinline=1"
+                  title="YouTube video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <h3 data-i18n="training.videos.v3.title">Балансировка и центровка</h3>
+            </div>
+          </div>
+        </div>
+      </section>      
+
+    <section class="training-materials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="training.materials.title">Технические материалы</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">📄</div>
+                    <div class="material-content">
+                        <h3 data-i18n="training.materials.m1.title">Техническая документация</h3>
+                        <p data-i18n="training.materials.m1.desc">Руководства по эксплуатации, схемы подключения и спецификации для различных типов электродвигателей</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🧰</div>
+                    <div class="material-content">
+                        <h3 data-i18n="training.materials.m2.title">Методические пособия</h3>
+                        <p data-i18n="training.materials.m2.desc">Пошаговые инструкции по ремонту, перемотке и диагностике электродвигателей с иллюстрациями</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🛡️</div>
+                    <div class="material-content">
+                        <h3 data-i18n="training.materials.m3.title">Стандарты и нормы</h3>
+                        <p data-i18n="training.materials.m3.desc">ГОСТ, ISO и другие нормативные документы по электрооборудованию и технике безопасности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact-modal" id="contactModal" aria-hidden="true">
+        <div class="contact-modal__overlay" id="contactModalOverlay"></div>
+      
+        <div class="contact-modal__box" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+          <button class="contact-modal__close" id="contactModalClose" aria-label="Close">×</button>
+      
+          <h3 class="contact-modal__title" id="contactModalTitle" data-i18n="modal.title">Связаться с EMS</h3>
+          <p class="contact-modal__subtitle" data-i18n="modal.subtitle">Выберите удобный способ</p>
+      
+          <div class="contact-modal__actions">
+            <a class="contact-modal__btn" href="tel:+77755524414" data-i18n="modal.call">
+              📞 Позвонить: +7 (775) 552-44-14
+            </a>
+      
+            <a class="contact-modal__btn" target="_blank" rel="noopener"
+               href="https://wa.me/77755524414?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F."
+               data-i18n="modal.whatsapp">
+              💬 WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>      
+    <script src="languages.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,9 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=ru/index.html" />
-    <title>EMS Website</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS - Ремонт Электродвигателей</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">EMS</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active" data-page="home" data-i18n="nav.home">Главная</a>
+                <a href="services.html" class="nav-link" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
+                <a href="training.html" class="nav-link" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
+                <a href="about.html" class="nav-link" data-page="about" data-i18n="nav.about">О нас</a>
+            </div>
+            <div class="header-number">
+            <a href="tel:+77755524414" class="phone">+ 7 (775) 552-44-14</a>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <span id="currentLang">RU</span> ▼
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option" data-lang="ru">Рус 🇷🇺</div>
+                    <div class="lang-option" data-lang="en">Eng 🇬🇧</div>
+                    <div class="lang-option" data-lang="kk">Қаз 🇰🇿</div>
+                </div>
+            </div>
+            <div class="contact-button">
+                <button class="btn-primary" id="contactBtn" data-i18n="nav.contact">Связаться</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ГЛАВНАЯ -->
+    <div class="page active" id="home">
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">Услуги по ремонту и обслуживанию электродвигателей</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2 data-i18n="service.title">Увеличьте срок службы вашего двигателя</h2>
+                        <p data-i18n="service.description">Наш спектр услуг по обслуживанию двигателей призван обеспечить бесперебойную, надежную и эффективную работу ваших электродвигателей. От ремонта и капитального ремонта до индивидуальных решений для различных типов двигателей.</p>
+                        <p class="highlight" data-i18n="service.cta">Доверьте нам решение ваших проблем с двигателем.</p>
+                    </div>
+                    <div>
+                        <div class="content-image">
+                            <img src="main2.jpg" alt="motor"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-grid">
+                    <div>
+                        <div class="content-image">
+                            <img src="main3.jpg" alt="motor">
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <h2 data-i18n="reliability.title">Повышение надежности</h2>
+                        <p data-i18n="reliability.description">Наши процедуры ремонта и капитального ремонта двигателей в сочетании с точными методами перемотки двигателей восстанавливают ваши двигатели до пикового состояния, повышая надежность и сводя к минимуму риск непредвиденных простоев. Благодаря испытаниям и диагностике двигателей мы выявляем потенциальные проблемы на ранних этапах и обеспечиваем максимальную надежность.</p>
+                        <p class="highlight" data-i18n="reliability.cta">Доверьтесь нам, чтобы ваши двигатели работали плавно и надежно на каждом этапе пути.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-section">
+                    <h3 data-i18n="extend.title">Доверьте нам продление срока службы вашего двигателя.</h3>
+                    <button class="btn-primary" id="contactBtn2" data-i18n="extend.button">Связаться</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- УСЛУГИ И ПРОДУКЦИЯ -->
+    <div class="page" id="services">
+        <section class="cta-wrapper">
+            <div class="container">
+              <div class="cta-section">
+                <h3>Доверьте нам продление срока службы вашего двигателя.</h3>
+                <button class="btn-primary">Связаться</button>
+              </div>
+            </div>
+          </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3 data-i18n="services.repair.title">Ремонт двигателей</h3>
+                        <p data-i18n="services.repair.desc">Профессиональный ремонт электродвигателей любой сложности с гарантией качества.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-i18n="services.maintenance.title">Обслуживание</h3>
+                        <p data-i18n="services.maintenance.desc">Регулярное техническое обслуживание для продления срока службы оборудования.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-i18n="services.diagnostics.title">Диагностика</h3>
+                        <p data-i18n="services.diagnostics.desc">Современная диагностика с использованием профессионального оборудования.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-i18n="services.rewinding.title">Перемотка</h3>
+                        <p data-i18n="services.rewinding.desc">Качественная перемотка статоров и роторов электродвигателей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ОБУЧЕНИЕ И МАТЕРИАЛЫ -->
+    <div class="page" id="training">
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="training.hero">Обучение и материалы</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="training-content">
+                    <h2 data-i18n="training.courses.title">Обучающие курсы</h2>
+                    <p data-i18n="training.courses.desc">Мы предлагаем профессиональное обучение по ремонту и обслуживанию электродвигателей для специалистов различного уровня.</p>
+                    
+                    <h2 data-i18n="training.materials.title">Технические материалы</h2>
+                    <p data-i18n="training.materials.desc">База знаний, руководства и инструкции по эксплуатации электродвигателей.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- О НАС -->
+    <div class="page" id="about">
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="about.hero">О нас</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 data-i18n="about.company.title">О компании</h2>
+                    <p data-i18n="about.company.desc">EMR — ведущая компания в области ремонта и обслуживания электродвигателей с многолетним опытом работы.</p>
+                    
+                    <h2 data-i18n="about.team.title">Наша команда</h2>
+                    <p data-i18n="about.team.desc">Команда высококвалифицированных специалистов с большим опытом в сфере электротехники.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <section class="contact-section" id="contactForm" data-lat="47.0609364728903" data-lon="51.88073062496536">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-form">
+              <h2 data-i18n="contact.title">Напишите нам</h2>
+              <form>
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Фамилия Имя" data-i18n-placeholder="contact.name" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="company" placeholder="Название Компании" data-i18n-placeholder="contact.company" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" placeholder="Тел. Номер" data-i18n-placeholder="contact.phone" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Почта" data-i18n-placeholder="contact.email" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Сообщение" data-i18n-placeholder="contact.message" required></textarea>
+                </div>
+                <div class="form-footer">
+                  <div class="captcha-placeholder">reCAPTCHA</div>
+                  <button type="submit" class="btn-submit" data-i18n="contact.submit">Подтвердить</button>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+                <h3 id="contactTitle" data-i18n="contact.info_title">Контактная информация</h3>
+                <p class="contact-address" data-i18n="contact.address">📍 Адрес: Улица Орынгали Смагулов, 13</p>                
+                 <a href="tel:+77012345678" class="phone-large">+7 775 552 44 14</a>
+              <div class="map-placeholder" id="mapPlaceholder"></div>
+            </div>
+          </div>
+        </div>
+    </section>      
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full&key=a4df93fe-e32f-46fe-8f87-c0f5a4c23c29"></script>
+    <script src="languages.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>

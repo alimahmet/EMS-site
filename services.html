@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги и продукция - EMS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="services.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">EMS</div>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="home" data-i18n="nav.home">Главная</a>
+        <a href="services.html" class="nav-link active" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
+        <a href="training.html" class="nav-link" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
+        <a href="about.html" class="nav-link" data-page="about" data-i18n="nav.about">О нас</a>
+      </div>
+
+      <div class="header-number">
+        <a href="tel:+77755524414" class="phone">+ 7 (775) 552-44-14</a>
+      </div>
+
+      <div class="lang-selector">
+        <button class="lang-btn" id="langBtn">
+          <span id="currentLang">RU</span> ▼
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <div class="lang-option" data-lang="ru">Рус 🇷🇺</div>
+          <div class="lang-option" data-lang="en">Eng 🇬🇧</div>
+          <div class="lang-option" data-lang="kk">Қаз 🇰🇿</div>
+        </div>
+      </div>
+
+      <div class="contact-button">
+        <button class="btn-primary" id="contactBtn" data-i18n="nav.contact">Связаться</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="services-hero">
+    <div class="container">
+      <h1 data-i18n="services.hero.title">Услуги и продукция</h1>
+      <p class="hero-subtitle" data-i18n="services.hero.subtitle">
+        Комплексный ремонт и обслуживание электродвигателей с гарантией качества
+      </p>
+      <button class="btn-hero" id="requestBtn" data-i18n="services.hero.button">Запросить расчёт</button>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.services.title">Наши услуги</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('services2.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service1.title">Ремонт электродвигателей</h3>
+            <p data-i18n="services.service1.desc">
+              Капитальный и текущий ремонт асинхронных и синхронных двигателей любой сложности.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service1.item1">Замена подшипниковых узлов</li>
+              <li data-i18n="services.service1.item2">Ремонт корпуса и вала</li>
+              <li data-i18n="services.service1.item3">Восстановление геометрии</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('services3.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service2.title">Перемотка обмоток</h3>
+            <p data-i18n="services.service2.desc">
+              Профессиональная перемотка статора и ротора с использованием качественных материалов.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service2.item1">Полная замена обмоток</li>
+              <li data-i18n="services.service2.item2">Пропитка изоляции</li>
+              <li data-i18n="services.service2.item3">Контроль сопротивления</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('services4.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service3.title">Диагностика и испытания</h3>
+            <p data-i18n="services.service3.desc">
+              Комплексная диагностика с применением современного измерительного оборудования.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service3.item1">Вибродиагностика</li>
+              <li data-i18n="services.service3.item2">Межвитковые испытания</li>
+              <li data-i18n="services.service3.item3">Измерение сопротивления изоляции</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('service5.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service4.title">Техническое обслуживание</h3>
+            <p data-i18n="services.service4.desc">
+              Регулярное ТО для предотвращения аварийных ситуаций и продления срока службы.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service4.item1">Плановые осмотры</li>
+              <li data-i18n="services.service4.item2">Смазка подшипников</li>
+              <li data-i18n="services.service4.item3">Проверка креплений</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('service6.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service5.title">Балансировка ротора</h3>
+            <p data-i18n="services.service5.desc">
+              Точная динамическая балансировка для устранения вибраций и шума.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service5.item1">Балансировка на стенде</li>
+              <li data-i18n="services.service5.item2">Устранение биений</li>
+              <li data-i18n="services.service5.item3">Центровка валов</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('services7.jpg')"></div>
+          <div class="service-content">
+            <h3 data-i18n="services.service6.title">Модернизация и апгрейд</h3>
+            <p data-i18n="services.service6.desc">
+              Улучшение характеристик двигателя и внедрение современных технологий.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="services.service6.item1">Установка датчиков</li>
+              <li data-i18n="services.service6.item2">Повышение класса изоляции</li>
+              <li data-i18n="services.service6.item3">Оптимизация охлаждения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.products.title">Продукция</h2>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img" style="background-image: url('services8.jpg')"></div>
+          <div class="product-content">
+            <h3 data-i18n="services.product1.title">Подшипники и ремкомплекты</h3>
+            <p data-i18n="services.product1.desc">
+              Качественные подшипники от ведущих мировых производителей для всех типов двигателей.
+            </p>
+            <ul class="product-list">
+              <li data-i18n="services.product1.item1">Шариковые подшипники</li>
+              <li data-i18n="services.product1.item2">Роликовые подшипники</li>
+              <li data-i18n="services.product1.item3">Сальники и уплотнения</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img" style="background-image: url('services9.jpg')"></div>
+          <div class="product-content">
+            <h3 data-i18n="services.product2.title">Изоляционные материалы и лаки</h3>
+            <p data-i18n="services.product2.desc">
+              Термостойкие изоляционные материалы класса F/H для надёжной защиты обмоток.
+            </p>
+            <ul class="product-list">
+              <li data-i18n="services.product2.item1">Слюдопластовая изоляция</li>
+              <li data-i18n="services.product2.item2">Пропиточные лаки</li>
+              <li data-i18n="services.product2.item3">Электротехнический картон</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img" style="background-image: url('services10.jpg')"></div>
+          <div class="product-content">
+            <h3 data-i18n="services.product3.title">Запчасти и комплектующие</h3>
+            <p data-i18n="services.product3.desc">
+              Широкий ассортимент оригинальных и совместимых запчастей для электродвигателей.
+            </p>
+            <ul class="product-list">
+              <li data-i18n="services.product3.item1">Вентиляторы охлаждения</li>
+              <li data-i18n="services.product3.item2">Клеммные коробки</li>
+              <li data-i18n="services.product3.item3">Щёткодержатели</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="specs-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.specs.title">Технические возможности</h2>
+      <p class="specs-note" data-i18n="services.specs.note">* Примерные значения — уточняются под конкретный проект</p>
+
+      <div class="specs-grid">
+        <div class="spec-badge">
+          <div class="spec-icon">⚡</div>
+          <div class="spec-value" data-i18n="services.specs.power.value">0.37–500 кВт</div>
+          <div class="spec-label" data-i18n="services.specs.power.label">Мощность</div>
+        </div>
+
+        <div class="spec-badge">
+          <div class="spec-icon">🔌</div>
+          <div class="spec-value" data-i18n="services.specs.voltage.value">до 6.6 кВ</div>
+          <div class="spec-label" data-i18n="services.specs.voltage.label">Напряжение</div>
+        </div>
+
+        <div class="spec-badge">
+          <div class="spec-icon">🛡️</div>
+          <div class="spec-value" data-i18n="services.specs.insulation.value">F / H</div>
+          <div class="spec-label" data-i18n="services.specs.insulation.label">Класс изоляции</div>
+        </div>
+
+        <div class="spec-badge">
+          <div class="spec-icon">⚖️</div>
+          <div class="spec-value" data-i18n="services.specs.balancing.value">ISO 1940-1</div>
+          <div class="spec-label" data-i18n="services.specs.balancing.label">Балансировка</div>
+        </div>
+
+        <div class="spec-badge">
+          <div class="spec-icon">🔬</div>
+          <div class="spec-value" data-i18n="services.specs.testing.value">5 видов</div>
+          <div class="spec-label" data-i18n="services.specs.testing.label">Испытания</div>
+        </div>
+
+        <div class="spec-badge">
+          <div class="spec-icon">✓</div>
+          <div class="spec-value" data-i18n="services.specs.warranty.value">до 12 мес.</div>
+          <div class="spec-label" data-i18n="services.specs.warranty.label">Гарантия</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.why.title">Почему выбирают EMS</h2>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">⏱️</div>
+          <h3 data-i18n="services.why1.title">Оптимальные сроки</h3>
+          <p data-i18n="services.why1.desc">Чёткое планирование работ и соблюдение договорных сроков выполнения заказа.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3 data-i18n="services.why2.title">Контроль качества</h3>
+          <p data-i18n="services.why2.desc">Многоступенчатая проверка на каждом этапе ремонта и итоговые испытания.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">📄</div>
+          <h3 data-i18n="services.why3.title">Договор и документы</h3>
+          <p data-i18n="services.why3.desc">Официальное оформление, полный пакет документов, акты выполненных работ.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h3 data-i18n="services.why4.title">Гарантийное обслуживание</h3>
+          <p data-i18n="services.why4.desc">Гарантия на все виды работ с возможностью постгарантийного обслуживания.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-modal__overlay" id="contactModalOverlay"></div>
+  
+    <div class="contact-modal__box" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button class="contact-modal__close" id="contactModalClose" aria-label="Close">×</button>
+  
+      <h3 class="contact-modal__title" id="contactModalTitle" data-i18n="modal.title">Связаться с EMS</h3>
+      <p class="contact-modal__subtitle" data-i18n="modal.subtitle">Выберите удобный способ</p>
+  
+      <div class="contact-modal__actions">
+        <a class="contact-modal__btn" href="tel:+77755524414" data-i18n="modal.call">
+          📞 Позвонить: +7 (775) 552-44-14
+        </a>
+  
+        <a class="contact-modal__btn" target="_blank" rel="noopener"
+           href="https://wa.me/77755524414?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BD%D0%B5%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D1%83%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F."
+           data-i18n="modal.whatsapp">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>  
+  <script src="languages.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
