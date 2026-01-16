@@ -11,12 +11,17 @@
     <header>
         <nav class="container">
             <div class="logo">EMS</div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active" data-page="home" data-i18n="nav.home">Главная</a>
-                <a href="services.html" class="nav-link" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
-                <a href="training.html" class="nav-link" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
-                <a href="about.html" class="nav-link" data-page="about" data-i18n="nav.about">О нас</a>
-            </div>
+            <div class="nav-dd">
+                <input type="checkbox" id="navToggle" class="nav-dd__toggle">
+                <label for="navToggle" class="nav-dd__label" data-fallback="Страницы">Страницы</label>
+              
+                <div class="nav-links nav-dd__panel">
+                  <a href="index.html" class="nav-link active" data-page="home" data-i18n="nav.home">Главная</a>
+                  <a href="services.html" class="nav-link" data-page="services" data-i18n="nav.services">Услуги и продукция</a>
+                  <a href="training.html" class="nav-link" data-page="training" data-i18n="nav.training">Обучение и материалы</a>
+                  <a href="about.html" class="nav-link" data-page="about" data-i18n="nav.about">О нас</a>
+                </div>
+              </div>              
             <div class="header-number">
             <a href="tel:+77755524414" class="phone">+ 7 (775) 552-44-14</a>
             </div>

@@ -248,3 +248,68 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+// ===== NAV FIX (ТОЛЬКО ЭТО ИЗМЕНЕНО): active по URL + label по активной ссылке =====
+(function () {
+  function currentFile() {
+    // '/path/about.html' -> 'about.html', '/' -> 'index.html'
+    const file = (location.pathname || "").split("/").filter(Boolean).pop() || "";
+    return file || "index.html";
+  }
+
+  function fileFromHref(href) {
+    if (!href) return "";
+    const clean = href.split("#")[0].split("?")[0];
+    const file = clean.split("/").filter(Boolean).pop() || "";
+    return file || "index.html";
+  }
+
+  function setActiveNavByUrl() {
+    const links = document.querySelectorAll(".nav-links a.nav-link");
+    if (!links.length) return;
+
+    const cur = currentFile();
+
+    links.forEach((a) => {
+      const target = fileFromHref(a.getAttribute("href"));
+      a.classList.toggle("active", target === cur);
+    });
+  }
+
+  function syncNavDropdownLabel() {
+    const label = document.querySelector(".nav-dd__label");
+    if (!label) return;
+
+    const activeLink = document.querySelector(".nav-links a.nav-link.active");
+    if (activeLink && activeLink.textContent.trim()) {
+      label.textContent = activeLink.textContent.trim();
+      return;
+    }
+
+    label.textContent = label.getAttribute("data-fallback") || "Страницы";
+  }
+
+  function closeDropdownOnClick() {
+    // закрываем dropdown после выбора ссылки (если checkbox-версия)
+    const toggle = document.querySelector(".nav-dd__toggle");
+    if (!toggle) return;
+
+    document.querySelectorAll(".nav-links a.nav-link").forEach((a) => {
+      a.addEventListener("click", () => {
+        toggle.checked = false;
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    setActiveNavByUrl();
+    syncNavDropdownLabel();
+    closeDropdownOnClick();
+  });
+
+  // После переключения языка тексты ссылок меняются — обновляем label
+  document.addEventListener("langChanged", () => {
+    // active не меняем, только текст label (он берётся из active ссылки)
+    syncNavDropdownLabel();
+  });
+})();
